@@ -9,7 +9,7 @@ const STATUS_STYLES = {
   decommissioned: 'bg-rose-50 text-rose-700 border-rose-200',
 };
 
-const categoryLabels = Object.fromEntries(CATEGORIES.map(c => [c.id, c.label]));
+const fallbackCategoryLabels = Object.fromEntries(CATEGORIES.map(c => [c.id, c.label]));
 
 export default function AssetCard({ asset, index = 0 }) {
   const { t } = useLanguage();
@@ -77,7 +77,7 @@ export default function AssetCard({ asset, index = 0 }) {
       <div className="flex flex-1 flex-col space-y-3 p-4">
         <div>
           <div className="mb-1 text-[10px] font-bold uppercase tracking-[0.18em] text-sky-600">
-            {categoryLabels[asset.category] || asset.category}
+            {t.categoryLabels[asset.category] || fallbackCategoryLabels[asset.category] || asset.category}
           </div>
           <h3 className="text-base font-bold leading-tight text-slate-950 transition-colors duration-300 group-hover:text-sky-700">
             {asset.name}
@@ -108,13 +108,13 @@ export default function AssetCard({ asset, index = 0 }) {
         <div className="flex gap-2 pt-1">
           {asset.specs?.speed && (
             <div className="flex-1 rounded-lg border border-sky-100 bg-sky-50 px-2 py-1.5 text-center">
-              <div className="text-[9px] uppercase tracking-wider text-slate-400">Speed</div>
+              <div className="text-[9px] uppercase tracking-wider text-slate-400">{t.speedLabel}</div>
               <div className="truncate text-[11px] font-semibold text-sky-700">{asset.specs.speed.split(' ').slice(0, 2).join(' ')}</div>
             </div>
           )}
           {asset.specs?.crew && (
             <div className="flex-1 rounded-lg border border-teal-100 bg-teal-50 px-2 py-1.5 text-center">
-              <div className="text-[9px] uppercase tracking-wider text-slate-400">Crew</div>
+              <div className="text-[9px] uppercase tracking-wider text-slate-400">{t.crewLabel}</div>
               <div className="truncate text-[11px] font-semibold text-teal-700">{asset.specs.crew.toString().split(' ')[0]}</div>
             </div>
           )}

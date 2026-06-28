@@ -1,13 +1,82 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Shield, SlidersHorizontal, Images, PlayCircle } from 'lucide-react';
+import { Shield, Search, ChevronDown, X, SlidersHorizontal } from 'lucide-react';
 import AssetCard from '../components/ui/AssetCard.jsx';
-import CategoryFilter from '../components/ui/CategoryFilter.jsx';
-import { GridPattern } from '../components/ui/Effects.jsx';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import { NAVAL_ASSETS, CATEGORIES } from '../data/navalAssets.js';
 
+// ── Category Dropdown ────────────────────────────────────────
+function CategoryDropdown({ activeCategory, onCategoryChange }) {
+  const { t } = useLanguage();
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  const activeLabel = t.categoryLabels[activeCategory] || CATEGORIES.find(c => c.id === activeCategory)?.label || t.categoryLabels.all;
+
+  // Close on outside click
+  useEffect(() => {
+    const handler = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+    };
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 shadow-sm transition-all hover:border-sky-300 hover:shadow-md"
+      >
+        <SlidersHorizontal className="h-4 w-4 text-sky-500" />
+        <span>{activeLabel}</span>
+        <ChevronDown className={`h-4 w-4 text-slate-400 transition-transform ${open ? 'rotate-180' : ''}`} />
+      </button>
+
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: 6, scale: 0.97 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 4, scale: 0.97 }}
+            transition={{ duration: 0.15 }}
+            className="absolute left-0 top-full z-50 mt-2 w-64 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xl"
+          >
+            {CATEGORIES.map((cat) => {
+              const count = cat.id === 'all'
+                ? NAVAL_ASSETS.length
+                : NAVAL_ASSETS.filter(a => a.category === cat.id).length;
+
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => { onCategoryChange(cat.id); setOpen(false); }}
+                  className={`flex w-full items-center justify-between px-4 py-2.5 text-sm transition-colors hover:bg-sky-50 ${
+                    activeCategory === cat.id
+                      ? 'bg-sky-50 font-semibold text-sky-700'
+                      : 'text-slate-700'
+                  }`}
+                >
+                  <span>{t.categoryLabels[cat.id] || cat.label}</span>
+                  <span className={`rounded-full px-2 py-0.5 text-[10px] font-semibold ${
+                    activeCategory === cat.id
+                      ? 'bg-sky-100 text-sky-700'
+                      : 'bg-slate-100 text-slate-500'
+                  }`}>
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+// ── Explore Page ─────────────────────────────────────────────
 export default function ExplorePage() {
   const { t } = useLanguage();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -17,6 +86,7 @@ export default function ExplorePage() {
   useEffect(() => {
     const cat = searchParams.get('cat');
     if (cat) setActiveCategory(cat);
+    else setActiveCategory('all');
   }, [searchParams]);
 
   const handleCategoryChange = (cat) => {
@@ -37,97 +107,75 @@ export default function ExplorePage() {
     });
   }, [activeCategory, searchQuery]);
 
-  const categoryLabel = CATEGORIES.find(c => c.id === activeCategory)?.label || 'All Assets';
-  const categoryCounts = CATEGORIES.filter(c => c.id !== 'all').map(category => ({
-    ...category,
-    count: NAVAL_ASSETS.filter(asset => asset.category === category.id).length,
-    image: NAVAL_ASSETS.find(asset => asset.category === category.id && asset.image)?.image,
-  }));
-
   const containerVariants = {
     hidden: {},
     visible: { transition: { staggerChildren: 0.04 } },
   };
 
   return (
-    <div className="min-h-screen bg-sky-50">
-      <div className="relative overflow-hidden bg-gradient-to-b from-white via-sky-50 to-sky-50 pb-12 pt-24">
-        <GridPattern />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_60%_at_50%_0%,rgba(125,211,252,0.28),transparent)]" />
+    <div className="min-h-screen bg-slate-50">
+      {/* ── Page Header ── */}
+      <div className="border-b border-slate-200 bg-white pt-20">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+          <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600 mb-3">
+            <Shield className="h-3.5 w-3.5" />
+            {t.orderOfBattle}
+          </div>
+          <h1 className="text-4xl font-black text-slate-950 sm:text-5xl">{t.exploreTitle}</h1>
+          <p className="mt-2 max-w-xl text-sm text-slate-500">{t.exploreSubtitle}</p>
+        </div>
+      </div>
 
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-            <div className="mb-3 flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-600">
-              <Shield className="h-3.5 w-3.5" />
-              Indian Naval Order of Battle
-            </div>
-            <div className="grid gap-6 lg:grid-cols-[1fr_420px] lg:items-end">
-              <div>
-                <h1 className="mb-2 text-4xl font-black text-slate-950 sm:text-5xl">{t.exploreTitle}</h1>
-                <p className="max-w-xl text-sm text-slate-600">{t.exploreSubtitle}</p>
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                <div className="rounded-xl border border-sky-100 bg-white p-4 shadow-sm">
-                  <Images className="mb-3 h-4 w-4 text-sky-600" />
-                  <div className="text-2xl font-black text-slate-950">{NAVAL_ASSETS.filter(a => a.image).length}</div>
-                  <div className="text-[10px] uppercase tracking-[0.16em] text-slate-400">image references</div>
-                </div>
-                <div className="rounded-xl border border-sky-100 bg-white p-4 shadow-sm">
-                  <PlayCircle className="mb-3 h-4 w-4 text-red-600" />
-                  <div className="text-2xl font-black text-slate-950">{NAVAL_ASSETS.filter(a => a.youtubeId).length}</div>
-                  <div className="text-[10px] uppercase tracking-[0.16em] text-slate-400">video cards</div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+      {/* ── Sticky Filter Bar ── */}
+      <div className="sticky top-16 z-30 border-b border-slate-200 bg-white shadow-sm">
+        <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            {/* Left: dropdown filter */}
+            <CategoryDropdown
+              activeCategory={activeCategory}
+              onCategoryChange={handleCategoryChange}
+            />
 
-          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-            {categoryCounts.slice(0, 10).map(category => (
-              <button
-                key={category.id}
-                onClick={() => handleCategoryChange(category.id)}
-                className={`relative h-24 overflow-hidden rounded-xl border text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md ${
-                  activeCategory === category.id ? 'border-sky-400 ring-4 ring-sky-100' : 'border-white'
-                }`}
-              >
-                {category.image && <img src={category.image} alt="" className="absolute inset-0 h-full w-full object-cover" />}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/72 via-slate-950/25 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 p-3">
-                  <div className="text-xs font-bold text-white">{category.label}</div>
-                  <div className="text-[10px] uppercase tracking-wider text-sky-100">{category.count} assets</div>
-                </div>
-              </button>
-            ))}
+            {/* Right: search */}
+            <div className="relative flex-1 sm:max-w-sm">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+              <input
+                type="text"
+                placeholder={t.searchPlaceholder}
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full rounded-xl border border-slate-200 bg-white py-2.5 pl-9 pr-9 text-sm text-slate-800 placeholder-slate-400 shadow-sm outline-none transition-all focus:border-sky-400 focus:ring-2 focus:ring-sky-100"
+              />
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              )}
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="sticky top-16 z-30 border-b border-sky-100 bg-white/92 backdrop-blur-xl">
-        <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
-          <CategoryFilter
-            activeCategory={activeCategory}
-            onCategoryChange={handleCategoryChange}
-            searchQuery={searchQuery}
-            onSearchChange={setSearchQuery}
-          />
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
-        <motion.div layout className="mb-6 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <SlidersHorizontal className="h-4 w-4 text-sky-600" />
-            <span className="text-sm text-slate-500">
-              <span className="font-bold text-sky-700">{filteredAssets.length}</span>
-              {' '}assets - {categoryLabel}
-            </span>
-          </div>
+      {/* ── Results ── */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6">
+        {/* Count + search label */}
+        <div className="mb-6 flex items-center justify-between">
+          <span className="text-sm text-slate-500">
+            <span className="font-bold text-sky-700">{filteredAssets.length}</span>{' '}
+            {filteredAssets.length === 1 ? t.assetCountSingular : t.assetCountPlural}
+            {activeCategory !== 'all' && (
+              <> — <span className="font-medium text-slate-700">{t.categoryLabels[activeCategory] || CATEGORIES.find(c => c.id === activeCategory)?.label}</span></>
+            )}
+          </span>
           {searchQuery && (
             <span className="text-xs text-slate-400">
-              Searching for: <span className="text-slate-700">"{searchQuery}"</span>
+              {t.resultsFor}: <span className="font-medium text-slate-700">"{searchQuery}"</span>
             </span>
           )}
-        </motion.div>
+        </div>
 
         <AnimatePresence mode="wait">
           {filteredAssets.length > 0 ? (
@@ -136,7 +184,7 @@ export default function ExplorePage() {
               variants={containerVariants}
               initial="hidden"
               animate="visible"
-              exit={{ opacity: 0, transition: { duration: 0.2 } }}
+              exit={{ opacity: 0, transition: { duration: 0.15 } }}
               className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             >
               {filteredAssets.map((asset, i) => (
@@ -144,9 +192,21 @@ export default function ExplorePage() {
               ))}
             </motion.div>
           ) : (
-            <motion.div key="empty" initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex flex-col items-center justify-center py-32 text-center">
-              <div className="mb-4 text-5xl text-sky-300">-</div>
-              <p className="text-base text-slate-500">{t.noResults}</p>
+            <motion.div
+              key="empty"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="flex flex-col items-center justify-center py-32 text-center"
+            >
+              <Search className="mb-4 h-10 w-10 text-slate-300" />
+              <p className="text-base font-semibold text-slate-500">{t.noResults}</p>
+              <p className="mt-1 text-sm text-slate-400">{t.tryDifferentFilter}</p>
+              <button
+                onClick={() => { setSearchQuery(''); handleCategoryChange('all'); }}
+                className="mt-4 rounded-lg border border-sky-200 bg-sky-50 px-4 py-2 text-sm font-medium text-sky-700 hover:bg-sky-100"
+              >
+                {t.clearFilters}
+              </button>
             </motion.div>
           )}
         </AnimatePresence>
