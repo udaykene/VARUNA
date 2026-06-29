@@ -214,7 +214,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '7,400 tons (full load)',
@@ -249,7 +249,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '7,400 tons (full load)',
@@ -619,7 +619,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: 'sVVm1BCMHXM',
     specs: {
       displacement: '6,670 tons (full load)',
@@ -655,7 +655,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '6,670 tons (full load)',
@@ -690,7 +690,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '6,670 tons (full load)',
@@ -725,7 +725,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '6,670 tons (full load)',
@@ -760,7 +760,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '6,670 tons (full load)',
@@ -795,7 +795,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '6,670 tons (full load)',
@@ -830,7 +830,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '6,670 tons (full load)',
@@ -1434,7 +1434,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '900 tons (full load)',
@@ -1468,7 +1468,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '900 tons (full load)',
@@ -1502,7 +1502,7 @@ export const NAVAL_ASSETS = [
     builder: 'Cochin Shipyard Limited (CSL)',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '900 tons (full load)',
@@ -1536,7 +1536,7 @@ export const NAVAL_ASSETS = [
     builder: 'Cochin Shipyard Limited (CSL)',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '900 tons (full load)',
@@ -1570,7 +1570,7 @@ export const NAVAL_ASSETS = [
     builder: 'Cochin Shipyard Limited (CSL)',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '900 tons (full load)',
@@ -1604,7 +1604,7 @@ export const NAVAL_ASSETS = [
     builder: 'Cochin Shipyard Limited (CSL)',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '900 tons (full load)',
@@ -1638,7 +1638,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '3,300 tons (full load)',
@@ -1673,7 +1673,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '3,300 tons (full load)',
@@ -1708,7 +1708,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '1,350 tons (full load)',
@@ -1743,7 +1743,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '1,350 tons (full load)',
@@ -1777,7 +1777,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '1,350 tons (full load)',
@@ -1811,7 +1811,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '1,400 tons (full load)',
@@ -1845,7 +1845,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '1,350 tons (full load)',
@@ -1879,7 +1879,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '1,350 tons (full load)',
@@ -1913,7 +1913,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '455 tons (full load)',
@@ -1947,7 +1947,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '455 tons (full load)',
@@ -1981,7 +1981,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '455 tons (full load)',
@@ -2015,7 +2015,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '455 tons (full load)',
@@ -2049,7 +2049,7 @@ export const NAVAL_ASSETS = [
     builder: 'Goa Shipyard Limited (GSL)',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '477 tons (full load)',
@@ -2083,7 +2083,7 @@ export const NAVAL_ASSETS = [
     builder: 'Goa Shipyard Limited (GSL)',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '477 tons (full load)',
@@ -2156,7 +2156,7 @@ export const NAVAL_ASSETS = [
     builder: 'Ship Building Centre (SBC), Visakhapatnam',
     fleet: 'Strategic Forces Command',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '6,000+ tons (submerged)',
@@ -2227,7 +2227,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '1,775 tons (surfaced), 2,000 tons (submerged)',
@@ -2300,7 +2300,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '5,650 tons (full load)',
@@ -2337,7 +2337,7 @@ export const NAVAL_ASSETS = [
     builder: 'Alcock Ashdown Ltd., Bhavnagar',
     fleet: 'Indian Coast Guard',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '2,500 tons (full load)',
@@ -2372,7 +2372,7 @@ export const NAVAL_ASSETS = [
     builder: 'L&T Shipbuilding',
     fleet: 'Indian Coast Guard',
     homePort: 'Vadinar (Northwest Region)',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load)',
@@ -2407,7 +2407,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Indian Coast Guard',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load)',
@@ -2443,7 +2443,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2476,7 +2476,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2509,7 +2509,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2542,7 +2542,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2575,7 +2575,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2608,7 +2608,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2643,7 +2643,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2676,7 +2676,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2709,7 +2709,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2742,7 +2742,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: '2,140 tons (full load) [approx.]',
@@ -2777,7 +2777,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -2812,7 +2812,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -2845,7 +2845,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -2878,7 +2878,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -2911,7 +2911,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -2944,7 +2944,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -2977,7 +2977,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -3011,7 +3011,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -3044,7 +3044,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -3077,7 +3077,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -3111,7 +3111,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -3144,7 +3144,7 @@ export const NAVAL_ASSETS = [
     builder: 'N/A',
     fleet: 'Indian Coast Guard',
     homePort: 'N/A',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ICGS_Vikram_%28PS-27%29.jpg/1280px-ICGS_Vikram_%28PS-27%29.jpg',
     youtubeId: null,
     specs: {
       displacement: 'N/A',
@@ -3179,7 +3179,7 @@ export const NAVAL_ASSETS = [
     builder: 'L&T Shipbuilding, Surat',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '3,750 tons (full load)',
@@ -3213,7 +3213,7 @@ export const NAVAL_ASSETS = [
     builder: 'BEML / Force Motors',
     fleet: 'MARCOS / Indian Coast Guard',
     homePort: 'Multiple coastal bases',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '14 tons (gross vehicle weight)',
@@ -3250,7 +3250,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '3,800 tons (full load)',
@@ -3285,7 +3285,7 @@ export const NAVAL_ASSETS = [
     builder: 'Fincantieri / DSME, South Korea',
     fleet: 'Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '27,000 tons (full load)',
@@ -3400,7 +3400,7 @@ export const NAVAL_ASSETS = [
     builder: '61 Communards Shipyard, Nikolayev',
     fleet: 'Historic — Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: 'jmTp75Ll56E',
     specs: {
       displacement: '4,974 tons (full load)',
@@ -3474,7 +3474,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Historic — Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '3,850 tons (full load)',
@@ -3510,7 +3510,7 @@ export const NAVAL_ASSETS = [
     builder: 'Severodvinsk Shipyard',
     fleet: 'Historic',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '5,000 tons (submerged)',
@@ -3534,10 +3534,10 @@ export const NAVAL_ASSETS = [
   },
 
   {
-    id: 'ins-ganga-f21-historic',
+    id: 'ins-ganga-f22',
     name: 'INS Ganga',
-    pennant: 'F21',
-    category: 'historic',
+    pennant: 'F22',
+    category: 'frigates',
     class: 'Godavari-class',
     project: 'Project 16',
     status: 'decommissioned',
@@ -3547,7 +3547,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Historic — Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/INS_Ganga.jpg/640px-INS_Ganga.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/f/f8/INS_Ganga_%28F22%29_-_02.jpg?_=20170529202851',
     youtubeId: null,
     specs: {
       displacement: '3,850 tons (full load)',
@@ -3571,10 +3571,10 @@ export const NAVAL_ASSETS = [
   },
 
   {
-    id: 'ins-gomati-f22-historic',
+    id: 'ins-gomati-f21-historic',
     name: 'INS Gomati',
-    pennant: 'F22',
-    category: 'historic',
+    pennant: 'F21',
+    category: 'frigates',
     class: 'Godavari-class',
     project: 'Project 16',
     status: 'decommissioned',
@@ -3608,7 +3608,7 @@ export const NAVAL_ASSETS = [
   },
 
   {
-    id: 'ins-khukri-p49-historic',
+    id: 'ins-khukri-p49',
     name: 'INS Khukri (1989)',
     pennant: 'P49',
     category: 'historic',
@@ -3621,7 +3621,7 @@ export const NAVAL_ASSETS = [
     builder: 'Mazagon Dock Shipbuilders Ltd.',
     fleet: 'Historic — Western Fleet',
     homePort: 'Mumbai',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '1,350 tons (full load)',
@@ -3658,7 +3658,7 @@ export const NAVAL_ASSETS = [
     builder: 'Garden Reach Shipbuilders & Engineers (GRSE)',
     fleet: 'Historic — Eastern Fleet',
     homePort: 'Visakhapatnam',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg/1280px-Indian_Navy_ships_in_formation_during_TROPEX_2017.jpg',
+    image: '',
     youtubeId: null,
     specs: {
       displacement: '1,350 tons (full load)',

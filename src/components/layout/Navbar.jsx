@@ -32,6 +32,8 @@ export default function Navbar() {
     setMenuOpen(false);
   }, [location]);
 
+  if (location.pathname !== "/") return null;
+
   const navLinks = [
     { to: "/", label: t.navHome, icon: Home, exact: true, hash: "" },
     { to: "/explore", label: t.navExplore, icon: Compass },

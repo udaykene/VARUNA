@@ -2,9 +2,10 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
   ArrowLeft, Anchor, Ship, Zap, Shield, Navigation,
-  Calendar, MapPin, Wrench, Users, Clock, Image as ImageIcon,
+  Calendar, MapPin, Wrench, Users, Clock,
 } from 'lucide-react';
 import { NAVAL_ASSETS, CATEGORIES } from '../data/navalAssets.js';
+import React from 'react';
 import { useLanguage } from '../context/LanguageContext.jsx';
 import AssetCard from '../components/ui/AssetCard.jsx';
 
@@ -55,24 +56,13 @@ function SpecRow({ specKey, value }) {
   );
 }
 
-// ── Gallery builder ─────────────────────────────────────────
-function buildGallery(asset) {
-  const relatedImages = NAVAL_ASSETS
-    .filter(a => a.id !== asset.id && a.category === asset.category && a.image)
-    .slice(0, 5)
-    .map(a => ({ src: a.image, label: a.name }));
 
-  return [
-    ...(asset.image ? [{ src: asset.image, label: asset.name }] : []),
-    ...relatedImages,
-  ].slice(0, 6);
-}
 
 // ── Info Row (sidebar) ──────────────────────────────────────
 function InfoRow({ icon: Icon, label, value }) {
   if (!value) return null;
   return (
-    <div className="flex items-start gap-3 py-3 border-b border-slate-100 last:border-0">
+    <div className="flex items-start gap-3 py-3">
       <Icon className="mt-0.5 h-4 w-4 flex-shrink-0 text-sky-500" />
       <div>
         <div className="text-[9px] uppercase tracking-widest text-slate-400">{label}</div>
@@ -105,7 +95,6 @@ export default function DetailPage() {
 
   const isHistoric = asset.status === 'decommissioned';
   const categoryLabel = t.categoryLabels[asset.category] || CATEGORIES.find(c => c.id === asset.category)?.label || asset.category;
-  const gallery = buildGallery(asset);
   const related = NAVAL_ASSETS
     .filter(a => a.id !== asset.id && (a.category === asset.category || a.class === asset.class))
     .slice(0, 4);
@@ -122,6 +111,8 @@ export default function DetailPage() {
             <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/70 to-slate-900" />
           </div>
         )}
+
+
         {!asset.image && (
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-sky-950 to-slate-900" />
         )}
@@ -182,10 +173,10 @@ export default function DetailPage() {
 
       {/* ── Main Content ─────────────────────────────────────── */}
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6">
-        <div className="grid gap-10 lg:grid-cols-3">
+        <div className="">
 
           {/* ── Left / Main column ── */}
-          <div className="space-y-10 lg:col-span-2">
+          <div className="space-y-10">
 
             {/* Description */}
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
@@ -195,29 +186,22 @@ export default function DetailPage() {
             {/* Divider */}
             <hr className="border-slate-200" />
 
-            {/* Gallery */}
-            {gallery.length > 0 && (
+            {/* Single Asset Image */}
+            {asset.image && (
               <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.15 }}>
-                <h2 className="mb-5 flex items-center gap-2 text-xl font-bold text-slate-900">
-                  <ImageIcon className="h-5 w-5 text-sky-500" />
-                  {t.imageGallery}
-                </h2>
-                <div className="grid auto-rows-[160px] grid-cols-2 gap-3 md:grid-cols-4">
-                  {gallery.map((item, index) => (
-                    <div
-                      key={`${item.src}-${index}`}
-                      className={`${index === 0 ? 'col-span-2 row-span-2' : ''} relative overflow-hidden rounded-xl border border-slate-200 bg-slate-100 shadow-sm`}
-                    >
-                      <img
-                        src={item.src}
-                        alt={item.label}
-                        className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                      />
-                      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/70 to-transparent p-3">
-                        <div className="text-xs font-semibold text-white">{item.label}</div>
-                      </div>
-                    </div>
-                  ))}
+                <div className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 shadow-md">
+                  <img
+                    src={asset.image}
+                    alt={asset.name}
+                    className="block w-full h-auto object-contain"
+                    onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.parentElement.style.display = 'none'; }}
+                  />
+                  <div className="border-t border-slate-200 bg-slate-50 px-5 py-3">
+                    <div className="text-sm font-semibold text-slate-800">{asset.name}</div>
+                    {asset.pennant && asset.pennant !== 'N/A' && (
+                      <div className="mt-0.5 font-mono text-xs text-sky-600">{asset.pennant} · {asset.class}</div>
+                    )}
+                  </div>
                 </div>
               </motion.div>
             )}
@@ -299,46 +283,7 @@ export default function DetailPage() {
             )}
           </div>
 
-          {/* ── Right / Sidebar ── */}
-          <div className="space-y-5">
 
-            {/* Platform info card */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.15 }}
-              className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
-            >
-              {/* Coloured top band */}
-              <div className="border-b border-slate-100 bg-sky-50 px-5 py-4">
-                <div className="text-[10px] font-bold uppercase tracking-[0.18em] text-sky-600">{categoryLabel}</div>
-                <div className="mt-1 text-xl font-black text-slate-900">{asset.class}</div>
-                <div className="mt-0.5 text-xs text-slate-500">{asset.project}</div>
-              </div>
-
-              <div className="px-5 py-4">
-                <InfoRow icon={Anchor} label={t.class} value={asset.class} />
-                <InfoRow icon={Shield} label={t.origin} value={asset.origin} />
-                <InfoRow icon={Wrench} label={t.builder} value={asset.builder} />
-                <InfoRow icon={Ship} label={t.fleet} value={asset.fleet} />
-                <InfoRow icon={MapPin} label={t.homePort} value={asset.homePort} />
-              </div>
-            </motion.div>
-
-            {/* Image placeholder — for user to add their own photo */}
-            {!asset.image && (
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                className="flex aspect-video flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 p-6 text-center"
-              >
-                <ImageIcon className="mb-2 h-8 w-8 text-slate-300" />
-                <p className="text-xs font-semibold text-slate-400">Image placeholder</p>
-                <p className="mt-1 text-[11px] text-slate-400">Add <code className="text-xs">image: '/path.jpg'</code> in navalAssets.js</p>
-              </motion.div>
-            )}
-          </div>
         </div>
 
         {/* ── Related Assets ── */}
